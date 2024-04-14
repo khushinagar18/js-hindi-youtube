@@ -10,10 +10,10 @@ let userEmail;     //undefined
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
-console.log(id == anotherId)
+// console.log(id == anotherId)
 
 const bigNumber = 37862462876286482n  //bigInt
-console.log(bigNumber)
+// console.log(bigNumber)
 
 
 // Non Primitive data types(Reference)
@@ -31,9 +31,41 @@ const myFunction = function(){
     console.log("Hello World");
 }
 
-console.log(typeof bigNumber);
-console.log(typeof outsideTemp)   //null-->Object
-console.log(typeof myFunction)    //Function Object
+// console.log(typeof bigNumber);
+// console.log(typeof outsideTemp)   //null-->Object
+// console.log(typeof myFunction)    //Function Object
+
+
+
+
+//+++++++++++++++++++++++++++++++++++
+//  STACK (Primitive) , HEAP (Non-Primitive)
+
+let myYoutubename = "hiteshchoudharydotcom"
+
+let anotherName = myYoutubename
+anotherName = "ChaiaurCode";
+// console.log(anotherName);       //we get copy of variable here ---
+// console.log(myYoutubename);
+
+let userOne = {
+    email: "user@google.com",          //we get refrence of variable here
+    upi:"user@ybl",
+}
+
+let userTwo = userOne;
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
+
+
+
 
 
 
